@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@font-face {
+    font-family: "Kallisto";
+    src: url(./Assets/Fonts/Kallisto\ Light.otf);
+}
+
+:root {
+    --background-color: #070606;
+    --text-color: #fff;
+    --accent-color: #EA040E;
+    --pane-padding: 5px 42px;
+}
+
+body, html {
+    height: auto;
+    width: 100vw;
+    background-color: var(--background-color);
+}  
+
+h1, h2, h3 {
+    font-family: "Kallisto";
+    color: var(--text-color);
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
