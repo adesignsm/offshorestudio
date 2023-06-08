@@ -8,7 +8,9 @@
     --background-color: #070606;
     --text-color: #fff;
     --accent-color: #EA040E;
+    --span-color: #F1C405;
     --pane-padding: 5px 42px;
+    --header-blur: 0px;
 }
 
 body, html {

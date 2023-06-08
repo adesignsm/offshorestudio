@@ -3,7 +3,12 @@ import Slider, { SliderItem } from "../Slider";
 
 import "./index.css";
 
+/*Slider images*/
 import SLIDER_IMAGE_1 from "../../Assets/Media/Home/slider1.png";
+
+/*Icons*/
+import STAR from "../../Assets/Media/Icons/star.svg";
+import CALENDAR from "../../Assets/Media/Icons/calendar.svg";
 
 const Home = () => {
     return (
@@ -13,11 +18,16 @@ const Home = () => {
                     <section className="main-content">
                         <section className="events-container">
                             <h3> Upcoming events </h3>
-                            <h1> A random event name, August 30th at 1:00pm </h1>
+                            <h1> A random event name, <span>August 30th at 1:00pm</span> </h1>
                         </section>
                         <section className="booking-container">
                             <h3> Book a session </h3>
-                            <h1> 15 Slots Available </h1>
+                            <div className="content">
+                                <h1> <span>15</span> Slots Available </h1>
+                                <div className="calendar-circle">
+                                    <img src={CALENDAR} />
+                                </div>
+                            </div>
                         </section>
                         <section className="about-container">
                             <p>
