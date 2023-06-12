@@ -3,6 +3,8 @@ import Slider, { SliderItem } from "../Slider";
 
 import "./index.css";
 
+import Footer from "../Footer";
+
 /*Slider images*/
 import SLIDER_IMAGE_1 from "../../Assets/Media/Home/slider1.png";
 
@@ -42,6 +44,7 @@ const Home = () => {
                             </p>
                         </section>
                     </section>
+                    <Footer />
                 </div>
                 <div id="right" className="column">
                     <Slider>
