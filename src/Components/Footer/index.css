@@ -1,21 +1,36 @@
 #footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50vw; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
 }
 
 #footer .copyrights span {
-    font-family: "Kallisto";
-    text-transform: uppercase;
+  font-family: "Kallisto";
+  text-transform: uppercase;
 }
 
 #footer .socials ul {
-    display: flex;
-    padding: 0;
+  display: flex;
+  padding: 0;
 }
 
 #footer .socials ul > li {
-    margin-left: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    font-size: 0.8rem;
+  }
+
+  #footer .socials ul {
+    display: flex;
+    padding: 0;
+  }
+
+  #footer .socials ul > li {
+    margin-left: 0.5rem;
+  }
 }
