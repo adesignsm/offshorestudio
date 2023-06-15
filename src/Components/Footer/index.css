@@ -13,6 +13,7 @@
 
 #footer .socials ul {
   display: flex;
+  justify-content: flex-end;
   padding: 0;
 }
 
@@ -22,15 +23,17 @@
 
 @media (max-width: 768px) {
   #footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
     font-size: 0.8rem;
   }
 
-  #footer .socials ul {
-    display: flex;
-    padding: 0;
+  #footer .copyrights {
+    margin-left: 1rem;
   }
 
-  #footer .socials ul > li {
-    margin-left: 0.5rem;
+  #footer .socials {
+    margin-right: 1rem;
   }
 }

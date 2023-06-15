@@ -1,11 +1,11 @@
 .slider {
   overflow: hidden;
+  margin: 0 1rem;
 }
 
 .inner {
   white-space: nowrap;
   /* transition: transform 0.3s; */
-  transition: transform 300s;
 }
 
 .slider-item {

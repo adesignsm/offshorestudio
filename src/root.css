@@ -1,32 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 @font-face {
-    font-family: "Kallisto";
-    src: url(./Assets/Fonts/Kallisto\ Light.otf);
+  font-family: "Kallisto";
+  src: url(./Assets/Fonts/Kallisto\ Light.otf);
 }
 
 :root {
-    --background-color: #070606;
-    --text-color: #fff;
-    --accent-color: #EA040E;
-    --span-color: #F1C405;
-    --pane-padding: 5px 42px;
-    --header-blur: 0px;
+  --background-color: #070606;
+  --text-color: #fff;
+  --accent-color: #ea040e;
+  --span-color: #f1c405;
+  --pane-padding: 5px 42px;
+  --header-blur: 0px;
 }
 
-body, html {
-    height: auto;
-    width: 100vw;
-    background-color: var(--background-color);
-    overflow-x: hidden;
-}  
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100vw;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
 
-h1, h2, h3 {
-    font-family: "Kallisto";
-    color: var(--text-color);
-    font-weight: lighter;
+h1,
+h2,
+h3 {
+  font-family: "Kallisto";
+  color: var(--text-color);
+  font-weight: lighter;
 }
 
 p {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
 }
