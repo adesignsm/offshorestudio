@@ -99,26 +99,15 @@
   }
 
   #header .title-container h1 {
-    text-transform: uppercase;
-    text-align: center;
     line-height: 0.7rem;
   }
 
   #header .subtext-container {
     display: none;
-    margin-left: 0;
   }
 
   #header .menu-container button {
-    border: 2.5px solid #fff;
-    border-radius: 15px;
-    background-color: transparent;
-    color: #fff;
     padding: 0.5rem 1.5rem;
     margin: 1rem 2rem;
-    font-family: "Kallisto";
-    font-size: large;
-    text-transform: uppercase;
-    cursor: pointer;
   }
 }

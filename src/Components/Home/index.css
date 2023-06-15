@@ -111,9 +111,7 @@
   }
 
   #main-page .column .main-content .booking-container .content {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0 0 2rem;
   }
 
