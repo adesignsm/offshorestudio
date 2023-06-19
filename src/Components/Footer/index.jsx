@@ -15,10 +15,10 @@ const Footer = () => {
                 </div>
                 <div className="socials">
                     <ul>
-                        <li><img src={INSTAGRAM} /></li>
-                        <li><img src={MAIL} /></li>
+                        <li><a href="https://instagram.com/offshore.studio" target="_blank"><img src={INSTAGRAM} /></a></li>
+                        <li><a href="mailto:info@offshorestudio.co"><img src={MAIL} /></a></li>
                         <li><img src={PHONE} /></li>
-                        <li><img src={LOCATION} /></li>
+                        <li><a href="https://goo.gl/maps/gGcJ3DNxT2v5W7L28" target="_blank"><img src={LOCATION} /></a></li>
                     </ul>
                 </div>
             </footer>

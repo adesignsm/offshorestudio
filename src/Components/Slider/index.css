@@ -13,8 +13,6 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: green;
-  color: #fff;
 }
 
 .slider-item img {
@@ -40,5 +38,9 @@
   .slider {
     border-radius: 15px;
     height: auto;
+  }
+
+  .right-column {
+    position: fixed;
   }
 }

@@ -17,13 +17,13 @@ const Home = () => {
     <>
       <main id="main-page">
         <div id="left" className="column">
-          <section className="main-content">
-            <section className="subtext-container">
+          <section className="subtext-container">
               <p>
                 Automated DJ booking studio based in Toronto, Ontario. Lorem
                 ipsum text to fill up space.
               </p>
             </section>
+          <section className="main-content">
             <section className="events-container">
               <h3> Upcoming events </h3>
               <h1>

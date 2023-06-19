@@ -29,9 +29,9 @@ const Header = () => {
           <div className="dropdown">
             <button onClick={toggleDropdown}> Menu </button>
             <nav className={`drop-down-content ${isDropdownOpen ? "show" : ""}`}>
-              <a href="#">Booking</a>
-              <a href="#">Faq</a>
-              <a href="#">Login</a>
+              <a className="booking-link" href="#">Booking</a>
+              <a className="faq-link" href="#">Faq</a>
+              <a className="login-link" href="#">Login</a>
             </nav>
           </div>
         </div>
