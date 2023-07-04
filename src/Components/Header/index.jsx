@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
 import "./index.css";
 
 const Header = () => {
@@ -30,7 +31,7 @@ const Header = () => {
             <button onClick={toggleDropdown}> Menu </button>
             <nav className={`drop-down-content ${isDropdownOpen ? "show" : ""}`}>
               <a className="booking-link" href="#">Booking</a>
-              <a className="faq-link" href="#">Faq</a>
+              <Link className="faq-link" activeClass="active" to="faq-section" spy={true} smooth={true} offset={-150} duration={1000}>Faq</Link>
               <a className="login-link" href="#">Login</a>
             </nav>
           </div>

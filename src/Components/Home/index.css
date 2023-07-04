@@ -7,7 +7,7 @@
 
 #left.column {
   width: 50vw;
-  height: 100vh;
+  height: 100%;
   margin-top: 40vh;
   margin-right: 5rem;
 }
@@ -90,7 +90,8 @@
   #main-page .column .main-content .subtext-container,
   #main-page .column .main-content .events-container,
   #main-page .column .main-content .booking-container,
-  #main-page .column .main-content .about-container {
+  #main-page .column .main-content .about-container,
+  #main-page .column .main-content .faq-container {
     background-color: transparent;
     text-align: center;
     backdrop-filter: blur(20px);

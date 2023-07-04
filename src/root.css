@@ -35,3 +35,8 @@ p {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
+
+
+a {
+  cursor: pointer;
+}

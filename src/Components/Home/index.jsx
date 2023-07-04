@@ -11,6 +11,7 @@ import SLIDER_IMAGE_1 from "../../Assets/Media/Home/slider1.png";
 /*Icons*/
 import STAR from "../../Assets/Media/Icons/star.svg";
 import CALENDAR from "../../Assets/Media/Icons/calendar.svg";
+import FAQ from "../FAQ";
 
 const Home = () => {
   return (
@@ -58,6 +59,9 @@ const Home = () => {
                 Here at Offshorestudio we strive to offer a friendly environment
                 for DJ's of all types.
               </p>
+            </section>
+            <section id="faq-section" className="faq-container">
+              <FAQ />
             </section>
           </section>
           <Footer />
