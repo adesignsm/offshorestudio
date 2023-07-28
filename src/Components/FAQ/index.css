@@ -2,6 +2,11 @@
     padding-bottom: 4rem;
 }
 
+#faq-container h2 {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 4rem;
+}
+
 .accordion-wrapper {
     background-color: transparent;
     border-bottom: 2px solid #fff;
@@ -50,22 +55,4 @@
     content: "";
     border-top: 0;
     border-bottom: 5px solid;
-}
-
-.accordion-content {
-    padding: 1em;
-    padding-top: 0;
-}
-
-.accordion-content article {
-    border-bottom: 1px solid #000;
-}
-
-.accordion-content h1 {
-    color: #000;
-}
-
-.accordion-content p {
-    color: #F62E97;
-    font-weight: 800;
 }

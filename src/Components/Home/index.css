@@ -68,6 +68,11 @@
   width: 75%;
 }
 
+#main-page .column .main-content .booking-container .calendar-circle a {
+  text-align: center;
+}
+
+
 @media (max-width: 768px) {
   #main-page {
     flex-direction: column;
