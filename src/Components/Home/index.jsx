@@ -43,13 +43,16 @@ const Home = () => {
             <section className="events-container">
               <h3> Upcoming events </h3>
               <h1>
-                A random event name, <span>August 30th at 1:00pm</span>
+                Join the waiting list for our first workshop and stay up-to-date with our DJ workshop and practice hours.
+                <br />
+                <span>Date to be decided</span>
               </h1>
+              <button> Register </button>
             </section>
             <section className="booking-container">
               <h3> Book a session </h3>
               <div className="content">
-                <h1>
+                <h1 className="booking-details">
                   {" "}
                   <span>15</span> Slots Available{" "}
                 </h1>
@@ -58,10 +61,15 @@ const Home = () => {
                     <img src={CALENDAR} />
                   </a>
                 </div>
+
+                {/*COMING SOON BLUR TEMP */}
+                <div id="coming-soon-blur">
+                  <h1> Coming Soon </h1>
+                </div>
               </div>
             </section>
             <section className="about-container">
-              <div className="calendar-circle">
+              <div className="about-star">
                 <img src={STAR} />
               </div>
               <p>
@@ -85,17 +93,6 @@ const Home = () => {
               )
             })}
           </Slider>
-          {/* <Slider>
-            <SliderItem>
-              <img className="slider-image" src={SLIDER_IMAGE_1} />
-            </SliderItem>
-            <SliderItem>
-              <img className="slider-image" src={SLIDER_IMAGE_2} />
-            </SliderItem>
-            <SliderItem>
-              <img className="slider-image" src={SLIDER_IMAGE_3} />
-            </SliderItem>
-          </Slider> */}
         </div>
       </main>
     </>

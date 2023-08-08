@@ -40,6 +40,30 @@
   display: none;
 }
 
+#main-page .column .main-content .events-container button {
+  border: 2.5px solid #fff;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-family: "Kallisto";
+  font-size: large;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#main-page .column .main-content .events-container button:hover {
+  background-color: #ea040e;
+  color: #fff;
+  border: 2.5px solid #ea040e;
+}
+
 #main-page .column .main-content .subtext-container p {
   font-weight: bold;
 }
@@ -72,6 +96,15 @@
   text-align: center;
 }
 
+/*COMING SOON TEMP*/
+#coming-soon-blur {
+  position: absolute;
+  margin-top: -2.5vh;
+}
+
+#main-page .column .main-content .booking-container h3, .booking-details, .calendar-circle {
+  filter: blur(20px);
+}
 
 @media (max-width: 768px) {
   #main-page {
@@ -111,6 +144,11 @@
   #main-page .column .subtext-container {
     display: block;
     border: none;
+    backdrop-filter: blur(50px);
+    padding: 1rem;
+    margin: 0 auto;
+    width: 70vw;
+    border-radius: 15px;
   }
 
   #main-page .column .main-content .subtext-container p {
