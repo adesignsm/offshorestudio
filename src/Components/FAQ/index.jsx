@@ -31,7 +31,7 @@ const FAQ = () => {
                 </article>
                 <article className="service-accordion-wrapper">
                     <Accordian title="What equipment do you have?">
-                        <h2> We have two "Pioneer Nexus 2" CDJ's, and a "DJM 800 mixer".</h2>
+                        <h2> We have two CDJ 2000 Nexus's and DJM 900 mixer's.</h2>
                     </Accordian>
                 </article>
                 <article className="service-accordion-wrapper">
