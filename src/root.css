@@ -10,7 +10,7 @@
   --accent-color: #ea040e;
   --span-color: #ea040e;
   --pane-padding: 5px 42px;
-  --header-blur: 0px;
+  --header-blur: 100px;
 }
 
 body,

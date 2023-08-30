@@ -17,6 +17,14 @@
   text-align: center;
 }
 
+#header .title-container h1:nth-child(1) {
+  margin-bottom: 0;
+}
+
+#header .title-container h1:nth-child(2) {
+  margin-top: 0;
+}
+
 #header .subtext-container {
   width: 20vw;
   margin-left: -20vw;
@@ -67,6 +75,7 @@
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(100px);
 }
 
 .drop-down-content.show {
@@ -98,10 +107,6 @@
     position: fixed;
   }
 
-  #header .title-container h1 {
-    line-height: 0.7rem;
-  }
-
   #header .subtext-container {
     display: none;
   }
@@ -109,5 +114,11 @@
   #header .menu-container button {
     padding: 0.5rem 1.5rem;
     margin: 1rem 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+  #header .subtext-container {
+    display: none;
   }
 }

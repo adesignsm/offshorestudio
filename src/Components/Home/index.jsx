@@ -40,14 +40,14 @@ const Home = () => {
               </p>
           </section>
           <section className="main-content">
-            <section className="events-container">
-              <h3> Upcoming events </h3>
-              <h1>
-                Join the waiting list for our first workshop and stay up-to-date with our DJ workshop and practice hours.
-                <br />
-                <span>Date to be decided</span>
-              </h1>
-              <button> Register </button>
+            <section className="about-container">
+              <div className="about-star">
+                <img src={STAR} />
+              </div>
+              <p>
+                Offshore is a Toronto based DJ studio that strives to connect creativity, culture and community.
+                We offer an autonomous practice experience for DJs of all levels to hone their craft and find their sound.
+              </p>
             </section>
             <section className="booking-container">
               <h3> Book a session </h3>
@@ -68,14 +68,14 @@ const Home = () => {
                 </div>
               </div>
             </section>
-            <section className="about-container">
-              <div className="about-star">
-                <img src={STAR} />
-              </div>
-              <p>
-                Offshore is a Toronto based DJ studio that strives to connect creativity, culture and community.
-                We offer an autonomous practice experience for DJs of all levels to hone their craft and find their sound.
-              </p>
+            <section className="events-container">
+              <h3> Upcoming events </h3>
+              <h1>
+                Join mailing list for updates on practices hours and DJ workshops
+                <br />
+                <span>Date to be decided</span>
+              </h1>
+              <button> Register </button>
             </section>
             <section id="faq-section" className="faq-container">
               <FAQ />

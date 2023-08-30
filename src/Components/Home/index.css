@@ -58,6 +58,10 @@
   transition: all .2s ease;
 }
 
+#main-page .column .main-content .events-container h1 {
+  font-size: xx-large;
+}
+
 #main-page .column .main-content .events-container button:hover {
   background-color: #ea040e;
   color: #fff;
