@@ -3,6 +3,7 @@ import Slider, { SliderItem } from "../Slider";
 
 import "./index.css";
 
+import NewsLetter from "../NewsLetter";
 import Footer from "../Footer";
 
 /*Slider images*/
@@ -75,7 +76,8 @@ const Home = () => {
                 <br />
                 <span>Date to be decided</span>
               </h1>
-              <button> Register </button>
+              {/* <button> Register </button> */}
+              <NewsLetter />
             </section>
             <section id="faq-section" className="faq-container">
               <FAQ />
