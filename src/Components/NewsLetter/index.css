@@ -1,0 +1,28 @@
+#newsletter-form div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#newsletter-form div:first-child > div {
+    font-family: "Kallisto";
+    font-size: large;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--span-color) !important;
+}
+
+#newsletter-form div:first-child > input {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    font-size: 2em;
+    font-family: "Kallisto";
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+}
+
+#newsletter-form div:first-child > input:focus {
+    outline: none;
+}
