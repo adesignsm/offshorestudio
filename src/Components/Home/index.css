@@ -202,4 +202,8 @@
   #left .subtext-container p {
     font-size: x-large;
   }
+
+  #main-page .column .main-content .booking-container .calendar-circle {
+    margin-top: 2rem;
+  }
 }
