@@ -29,7 +29,8 @@
 }
 
 #left .main-content section h1 {
-  font-size: xxx-large;
+  font-size: xx-large;
+  margin-bottom: 0;
 }
 
 #main-page .column .main-content span {
@@ -37,7 +38,7 @@
 }
 
 #main-page .column .subtext-container {
-  display: none;
+  display: none !important;
 }
 
 #main-page .column .main-content .events-container button {
@@ -106,9 +107,9 @@
   margin-top: -2.5vh;
 }
 
-#main-page .column .main-content .booking-container h3, .booking-details, .calendar-circle {
+/* #main-page .column .main-content .booking-container h3, .booking-details, .calendar-circle {
   filter: blur(20px);
-}
+} */
 
 @media (max-width: 768px) {
   #main-page {

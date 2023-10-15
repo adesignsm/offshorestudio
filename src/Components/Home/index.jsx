@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider, { SliderItem } from "../Slider";
+import { Link } from "react-router-dom";
 
 import "./index.css";
 
@@ -7,13 +8,9 @@ import NewsLetter from "../NewsLetter";
 import Footer from "../Footer";
 
 /*Slider images*/
-import SLIDER_IMAGE_1 from "../../Assets/Media/Slider/1.jpg";
-import SLIDER_IMAGE_2 from "../../Assets/Media/Slider/2.jpg";
-import SLIDER_IMAGE_3 from "../../Assets/Media/Slider/3.jpg";
 import SLIDER_IMAGE_4 from "../../Assets/Media/Slider/4.jpg";
 import SLIDER_IMAGE_5 from "../../Assets/Media/Slider/5.jpg";
 import SLIDER_IMAGE_6 from "../../Assets/Media/Slider/6.jpg";
-import SLIDER_IMAGE_7 from "../../Assets/Media/Slider/7.jpg";
 
 /*Icons*/
 import STAR from "../../Assets/Media/Icons/star.svg";
@@ -22,14 +19,11 @@ import FAQ from "../FAQ";
 
 const Home = () => {
   const sliderArray = [
-    SLIDER_IMAGE_1,
-    SLIDER_IMAGE_2,
-    SLIDER_IMAGE_3,
     SLIDER_IMAGE_4,
     SLIDER_IMAGE_5,
     SLIDER_IMAGE_6,
-    SLIDER_IMAGE_7
   ]
+  
   return (
     <>
       <main id="main-page">
@@ -51,31 +45,30 @@ const Home = () => {
               </p>
             </section>
             <section className="booking-container">
-              <h3> Book a session </h3>
+              <h1> Book a session </h1>
               <div className="content">
-                <h1 className="booking-details">
+                <h3 className="booking-details">
                   {" "}
                   <span>15</span> Slots Available{" "}
-                </h1>
+                </h3>
                 <div className="calendar-circle">
-                  <a href="//bookings.reservio.com/modal/offshorestudio/?backlink=http%3A%2F%2Flocalhost%3A3000%2F" target="_blank">
-                    <img src={CALENDAR} />
-                  </a>
+                  <Link to="/booking"><img src={CALENDAR} /></Link>
                 </div>
 
                 {/*COMING SOON BLUR TEMP */}
-                <div id="coming-soon-blur">
+                {/* <div id="coming-soon-blur">
                   <h1> Coming Soon </h1>
-                </div>
+                </div> */}
               </div>
             </section>
             <section className="events-container">
-              <h3> Upcoming events </h3>
-              <h1>
-                Join mailing list for updates on practices hours and DJ workshops
+              <h1> Upcoming events </h1>
+              <h3>
+              Join mailing list to receive updates for upcoming DJ workshops.
+                <br />
                 <br />
                 <span>Date to be decided</span>
-              </h1>
+              </h3>
               {/* <button> Register </button> */}
               <NewsLetter />
             </section>

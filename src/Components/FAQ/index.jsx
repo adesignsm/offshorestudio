@@ -24,33 +24,33 @@ const FAQ = () => {
             <div id="faq-container">
                 <article className="service-accordion-wrapper">
                     <Accordian title="What do I need to bring?">
-                        <h2> Please bring your own headphones and USB. 
+                        <h3> Please bring your own headphones and USB. 
                             Please ensure that your USB has been analyzed with rekordbox before coming to the studio. 
-                        </h2>
+                        </h3>
                     </Accordian>
                 </article>
                 <article className="service-accordion-wrapper">
                     <Accordian title="What equipment do you have?">
-                        <h2> We have two CDJ 2000 Nexus's and DJM 900 mixer's.</h2>
+                        <h3> We have two CDJ 2000 Nexus's and DJM 900 mixer's.</h3>
                     </Accordian>
                 </article>
                 <article className="service-accordion-wrapper">
                     <Accordian title="How many people can attend my session">
-                        <h2> You can have up to 5 people attending your session. </h2>
+                        <h3> You can have up to 5 people attending your session. </h3>
                     </Accordian>
                 </article>
                 <article className="service-accordion-wrapper">
                     <Accordian title="Where are you located?">
-                        <h2> We are located at 201 Weston Avenue, Unit G2. 
+                        <h3> We are located at 201 Weston Avenue, Unit G2. 
                             Your temporary passcode will enable you to enter the space when you get to the door. 
-                        </h2>
+                        </h3>
                     </Accordian>
                 </article>
                 <article className="service-accordion-wrapper">
                     <Accordian title="Do you have parking?">
-                        <h2>
+                        <h3>
                         You are not permitted to park in 201 Weston Avenue’s parking lot, but you can park behind the studio at XYZ Storage or at the neighbouring Stockyard Mall. 
-                        </h2>
+                        </h3>
                     </Accordian>
                 </article>
             </div>

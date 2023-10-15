@@ -26,3 +26,13 @@
 #newsletter-form div:first-child > input:focus {
     outline: none;
 }
+
+@media (max-width: 768px) {
+    #newsletter-form div:first-child {
+        width: 100%;
+    }
+
+    #newsletter-form div:first-child > input {
+        text-align: center;
+    }
+}

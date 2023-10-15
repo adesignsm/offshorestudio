@@ -12,6 +12,10 @@
   backdrop-filter: blur(var(--header-blur));
 }
 
+#header a {
+  text-decoration: none;
+}
+
 #header .title-container h1 {
   text-transform: uppercase;
   text-align: center;
