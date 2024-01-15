@@ -107,6 +107,78 @@
   margin-top: -2.5vh;
 }
 
+.session-duration-container {
+  position: relative;
+
+  button {
+    border: 2.5px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-family: "Kallisto";
+    font-size: large;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .drop-down-content {
+    width: 100%;
+  }
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+/* What is this dropbtn? 
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+*/
+
+.drop-down-content {
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+  border: 2.5px solid #fff;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(100px);
+}
+
+.drop-down-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.drop-down-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 2.5px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Kallisto";
+}
+
+.drop-down-content a:last-child {
+  border: none;
+}
+
 /* #main-page .column .main-content .booking-container h3, .booking-details, .calendar-circle {
   filter: blur(20px);
 } */
@@ -205,5 +277,15 @@
 
   #main-page .column .main-content .booking-container .calendar-circle {
     margin-top: 2rem;
+  }
+
+  .booking-container {
+    .session-duration-container {
+      margin-top: 1rem;
+  
+      .drop-down-content {
+        position: relative;
+      }
+    }
   }
 }

@@ -80,11 +80,13 @@
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   backdrop-filter: blur(100px);
+  pointer-events: none;
 }
 
 .drop-down-content.show {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: all;
 }
 
 .drop-down-content a {

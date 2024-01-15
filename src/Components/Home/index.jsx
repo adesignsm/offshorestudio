@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Slider, { SliderItem } from "../Slider";
-import { Link } from "react-router-dom";
 
 import "./index.css";
 
@@ -18,11 +17,30 @@ import CALENDAR from "../../Assets/Media/Icons/calendar.svg";
 import FAQ from "../FAQ";
 
 const Home = () => {
+  const [sessionDuration, setSessionDuration] = useState("1-hour");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const sliderArray = [
     SLIDER_IMAGE_4,
     SLIDER_IMAGE_5,
     SLIDER_IMAGE_6,
   ]
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleSessionDurationClick = (e) => {
+    if (e.target.dataset.duration === "1-hour") {
+      setSessionDuration("1-hour")
+    } else if (e.target.dataset.duration === "2-hour") {
+      setSessionDuration("2-hour");
+    } else if (e.target.dataset.duration === "3-hour") {
+      setSessionDuration("3-hour");
+    }
+
+    setIsDropdownOpen(false);
+  }
   
   return (
     <>
@@ -51,8 +69,18 @@ const Home = () => {
                   {" "}
                   <span>15</span> Slots Available{" "}
                 </h3>
-                <div className="calendar-circle">
+                {/* <div className="calendar-circle">
                   <Link to="/booking"><img src={CALENDAR} /></Link>
+                </div> */}
+                <div className="session-duration-container">
+                  <div className="session-duration-dropdown">
+                    <button onClick={toggleDropdown}> SELECT A SESSION DURATION </button>
+                    <nav className={`drop-down-content ${isDropdownOpen ? "show" : ""}`}>
+                      <a data-duration="1-hour" href="/booking/1-hour"> 1 hour </a>
+                      <a data-duration="2-hour" href="/booking/2-hour"> 2 hours </a>
+                      <a data-duration="3-hour" href="/booking/3-hour"> 3 hours </a>
+                    </nav>
+                  </div>
                 </div>
 
                 {/*COMING SOON BLUR TEMP */}
