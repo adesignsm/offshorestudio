@@ -41,16 +41,20 @@ const FAQ = () => {
                 </article>
                 <article className="service-accordion-wrapper">
                     <Accordian title="Where are you located?">
-                        <h3> We are located at 201 Weston Avenue, Unit G2. 
+                        {/* <h3> We are located at 201 Weston Avenue, Unit G2. 
                             Your temporary passcode will enable you to enter the space when you get to the door. 
+                        </h3> */}
+                        <h3>
+                            We are currently located Montreal and we'll have a new Toronto location coming soon. When you select your practice session you'll receive the specific address in your city as well as a temporary passcode that will enable you to enter the space.
                         </h3>
                     </Accordian>
                 </article>
                 <article className="service-accordion-wrapper">
                     <Accordian title="Do you have parking?">
-                        <h3>
+                        {/* <h3>
                         You are not permitted to park in 201 Weston Avenue’s parking lot, but you can park behind the studio at XYZ Storage or at the neighbouring Stockyard Mall. 
-                        </h3>
+                        </h3> */}
+                        <h3>Parking unavailable</h3>
                     </Accordian>
                 </article>
             </div>

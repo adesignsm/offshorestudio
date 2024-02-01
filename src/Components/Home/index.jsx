@@ -57,10 +57,11 @@ const Home = () => {
               <div className="about-star">
                 <img src={STAR} />
               </div>
-              <p>
+              {/* <p>
                 Offshore is a Toronto based DJ studio that strives to connect creativity, culture and community.
                 We offer an autonomous practice experience for DJs of all levels to hone their craft and find their sound.
-              </p>
+              </p> */}
+              <p>Offshore is a DJ Studio that strives to connect creativity, culture and community. We offer an autonomous practice exxperience for DJs of all levels to hone their craft and find their sound.</p>
             </section>
             <section className="booking-container">
               <h1> Book a session </h1>
