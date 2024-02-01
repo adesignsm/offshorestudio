@@ -34,11 +34,11 @@ const Booking = () => {
 
     useEffect(() => {
         if (sessionDurationType === "1-hour") {
-            setBookingUrl("https://calendly.com/offshore-booking/osdjbs");
+            setBookingUrl("https://calendly.com/offshore-booking/1-hr-breakglass");
         } else if (sessionDurationType === "2-hour") {
-            setBookingUrl("https://calendly.com/offshore-booking/2hr-dj-practice-session");
+            setBookingUrl("https://calendly.com/offshore-booking/2-hr-breakglass");
         } else if (sessionDurationType === "3-hour") {
-            setBookingUrl("https://calendly.com/offshore-booking/2-hr-dj-practice-session-clone");
+            setBookingUrl("https://calendly.com/offshore-booking/3-hr-breakglass");
         }
     }, [sessionDurationType])
 
