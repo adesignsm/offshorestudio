@@ -80,7 +80,7 @@
 #main-page .column .main-content .booking-container .content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 #main-page .column .main-content .booking-container .calendar-circle {
@@ -107,6 +107,34 @@
   margin-top: -2.5vh;
 }
 
+.session-selection {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  button {
+    border: 2.5px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-family: "Kallisto";
+    text-transform: uppercase;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .session-selection button {
+    width: 100%;
+  }
+}
+
 .session-duration-container {
   position: relative;
 
@@ -117,7 +145,25 @@
     color: #fff;
     padding: 1rem 3rem;
     font-family: "Kallisto";
-    font-size: large;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .drop-down-content {
+    width: 100%;
+  }
+}
+
+.session-location-container {
+  position: relative;
+
+  button {
+    border: 2.5px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-family: "Kallisto";
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -131,25 +177,12 @@
   display: inline-block;
 }
 
-/* What is this dropbtn? 
-
-.dropbtn {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-*/
-
 .drop-down-content {
   position: absolute;
   background-color: transparent;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 3;
   border-radius: 15px;
   border: 2.5px solid #fff;
   opacity: 0;
@@ -277,15 +310,5 @@
 
   #main-page .column .main-content .booking-container .calendar-circle {
     margin-top: 2rem;
-  }
-
-  .booking-container {
-    .session-duration-container {
-      margin-top: 1rem;
-  
-      .drop-down-content {
-        position: relative;
-      }
-    }
   }
 }

@@ -17,8 +17,11 @@ import CALENDAR from "../../Assets/Media/Icons/calendar.svg";
 import FAQ from "../FAQ";
 
 const Home = () => {
-  const [sessionDuration, setSessionDuration] = useState("1-hour");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDurationDropdownOpen, setIsDurationDropdownOpen] = useState(false);
+  const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false);
+
+  const [selectedDuration, setSelectedDuration] = useState('');
+  const [selectedLocation, setSelectedLocation] = useState('');
 
   const sliderArray = [
     SLIDER_IMAGE_4,
@@ -26,20 +29,24 @@ const Home = () => {
     SLIDER_IMAGE_6,
   ]
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleDurationDropdown = () => {
+    setIsDurationDropdownOpen(!isDurationDropdownOpen);
   };
 
-  const handleSessionDurationClick = (e) => {
-    if (e.target.dataset.duration === "1-hour") {
-      setSessionDuration("1-hour")
-    } else if (e.target.dataset.duration === "2-hour") {
-      setSessionDuration("2-hour");
-    } else if (e.target.dataset.duration === "3-hour") {
-      setSessionDuration("3-hour");
-    }
+  const handleDurationSelect = (e) => {
+    const selectedDuration = e.target.getAttribute('data-duration');
+    setSelectedDuration(selectedDuration);
+    setIsDurationDropdownOpen(false);
+  }
 
-    setIsDropdownOpen(false);
+  const toggleLocationDropdown = () => {
+    setIsLocationDropdownOpen(!isLocationDropdownOpen);
+  };
+
+  const handleLocationSelect = (e) => {
+    const selectedLocation = e.target.getAttribute('data-location');
+    setSelectedLocation(selectedLocation);
+    setIsLocationDropdownOpen(false);
   }
   
   return (
@@ -67,21 +74,45 @@ const Home = () => {
               <h1> Book a session </h1>
               <div className="content">
                 <h3 className="booking-details">
-                  {" "}
-                  <span>15</span> Slots Available{" "}
+                  {/* {" "} */}
+                  {/* <span>15</span> Slots Available{" "} */}
                 </h3>
-                {/* <div className="calendar-circle">
-                  <Link to="/booking"><img src={CALENDAR} /></Link>
-                </div> */}
-                <div className="session-duration-container">
-                  <div className="session-duration-dropdown">
-                    <button onClick={toggleDropdown}> SELECT A SESSION DURATION </button>
-                    <nav className={`drop-down-content ${isDropdownOpen ? "show" : ""}`}>
-                      <a data-duration="1-hour" href="/booking/1-hour"> 1 hour </a>
-                      <a data-duration="2-hour" href="/booking/2-hour"> 2 hours </a>
-                      <a data-duration="3-hour" href="/booking/3-hour"> 3 hours </a>
-                    </nav>
+                <div className="session-selection">
+                  <div className="session-location-container">
+                    <div className="session-location-dropdown">
+                      <button onClick={toggleLocationDropdown}> 
+                        {selectedLocation === '' ? 'LOCATION' : selectedLocation}
+                      </button>
+                      <nav className={`drop-down-content ${isLocationDropdownOpen ? "show" : ""}`}>
+                        <a data-location="montreal" onClick={handleLocationSelect}> Montreal </a>
+                        <a data-location="paris" onClick={handleLocationSelect}> Paris </a>
+                      </nav>
+                    </div>
                   </div>
+                  <div className="session-duration-container">
+                    <div className="session-duration-dropdown">
+                      <button onClick={toggleDurationDropdown}>
+                        {selectedDuration === '' ? 'DURATION' : selectedDuration} 
+                      </button>
+                      <nav className={`drop-down-content ${isDurationDropdownOpen ? "show" : ""}`}>
+                        <a data-duration="1-hour" onClick={handleDurationSelect}> 1 hour </a>
+                        <a data-duration="2-hours" onClick={handleDurationSelect}> 2 hours </a>
+                        <a data-duration="3-hours" onClick={handleDurationSelect}> 3 hours </a>
+                      </nav>
+                    </div>
+                  </div>
+                  <button type="submit">
+                    <a 
+                      href={`/booking/${selectedLocation}/${selectedDuration}`}
+                      style={{pointerEvents: `${selectedDuration === '' && selectedLocation === '' ? (
+                        'none'
+                      ) : (
+                        'all'
+                      )}`}}
+                    >
+                      {selectedDuration === '' || selectedLocation === '' ? 'select a time and location' : 'SUBMIT'}
+                    </a>
+                  </button>
                 </div>
 
                 {/*COMING SOON BLUR TEMP */}

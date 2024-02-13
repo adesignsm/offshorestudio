@@ -15,7 +15,7 @@ const App = () => {
                 <Header />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
-                    <Route path="/booking/:sessioinDuration" element={<Booking />} />
+                    <Route path="/booking/:sessioinLocation/:sessionDuration" element={<Booking />} />
                 </Routes>
             </BrowserRouter>
         </>

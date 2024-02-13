@@ -45,7 +45,14 @@ const FAQ = () => {
                             Your temporary passcode will enable you to enter the space when you get to the door. 
                         </h3> */}
                         <h3>
-                            We are currently located Montreal and we'll have a new Toronto location coming soon. When you select your practice session you'll receive the specific address in your city as well as a temporary passcode that will enable you to enter the space.
+                            We are currently have 2 locations:
+                            <br />
+                            <br />
+                            Montreal - 7250 Rue Clark
+                            <br />
+                            Paris - 3 Rue Saint-Claude
+                            <br />
+                            Toronto - New location coming soon
                         </h3>
                     </Accordian>
                 </article>

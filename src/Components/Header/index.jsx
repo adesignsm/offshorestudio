@@ -32,7 +32,7 @@ const Header = () => {
           <div className="dropdown">
             <button onClick={toggleDropdown}> Menu </button>
             <nav className={`drop-down-content ${isDropdownOpen ? "show" : ""}`}>
-              <RouterLink to={"/booking/1-hour"} onClick={toggleDropdown}> Booking </RouterLink>
+              <RouterLink to={"/booking/montreal/1-hour"} onClick={toggleDropdown}> Booking </RouterLink>
               <Link className="faq-link" activeClass="active" to="faq-section" spy={true} smooth={true} offset={-150} duration={1000} onClick={toggleDropdown}>Faq</Link>
               <a className="login-link" href="https://offshore-frontend.vercel.app" onClick={toggleDropdown}>Login</a>
             </nav>

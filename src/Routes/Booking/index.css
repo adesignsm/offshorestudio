@@ -22,7 +22,11 @@
 #booking-container {
     width: 50%;
     transform: scale(0.8);
-    margin-top: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .booking-footer #footer {
@@ -45,5 +49,19 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+    }
+
+    #booking-container {
+        margin-top: 1rem;
+    }
+
+    #booking-container .filter .session-selection {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        gap: 20px;
+    }
+
+    #booking-container .filter .session-selection .session-duration-container button {
+        margin-top: 0;
     }
 }
