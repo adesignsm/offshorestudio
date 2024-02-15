@@ -39,20 +39,17 @@
         flex-direction: column-reverse;
         padding: 0;
         margin-top: 15vh;
-
-        #booking-container {
-            width: 100%;
-        }
-    
-        .session-duration-dropdown button {
-            font-size: medium;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
     }
 
-    #booking-container {
+    .booking-page-container #booking-container {
+        width: 100%;
         margin-top: 1rem;
+    }
+
+    .booking-page-container .session-duration-dropdown button {
+        font-size: medium;
+        padding: 1rem;
+        margin-top: 2rem;
     }
 
     #booking-container .filter .session-selection {

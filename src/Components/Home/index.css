@@ -111,22 +111,22 @@
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+}
 
-  button {
-    border: 2.5px solid #fff;
-    border-radius: 15px;
-    background-color: transparent;
-    color: #fff;
-    padding: 1rem 3rem;
-    font-family: "Kallisto";
-    text-transform: uppercase;
-    cursor: pointer;
+.session-selection button {
+  border: 2.5px solid #fff;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-family: "Kallisto";
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-  }
+.session-selection button a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
@@ -135,42 +135,26 @@
   }
 }
 
-.session-duration-container {
-  position: relative;
-
-  button {
-    border: 2.5px solid #fff;
-    border-radius: 15px;
-    background-color: transparent;
-    color: #fff;
-    padding: 1rem 3rem;
-    font-family: "Kallisto";
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .drop-down-content {
-    width: 100%;
-  }
-}
-
+.session-duration-container,
 .session-location-container {
   position: relative;
+}
 
-  button {
-    border: 2.5px solid #fff;
-    border-radius: 15px;
-    background-color: transparent;
-    color: #fff;
-    padding: 1rem 3rem;
-    font-family: "Kallisto";
-    text-transform: uppercase;
-    cursor: pointer;
-  }
+.session-duration-container button,
+.session-location-container button {
+  border: 2.5px solid #fff;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-family: "Kallisto";
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
-  .drop-down-content {
-    width: 100%;
-  }
+.session-duration-container .drop-down-content,
+.session-location-container .drop-down-content {
+  width: 100%;
 }
 
 .dropdown {
